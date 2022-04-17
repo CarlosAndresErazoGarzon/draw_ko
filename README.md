@@ -1,4 +1,4 @@
-# draw_hangul
+# draw_ko
 
 A new Flutter project.
 
