@@ -1,7 +1,11 @@
+# Workflow setup for building Native iOS project
 workflows:
-  hello-world:
-    name: Hello world workflow
-    scripts:
+    ios-project: # workflow ID
+        name: iOS project # workflow name
+        environment:
+            xcode: latest
+            cocoapods: default
         scripts:
-        - name: Build for iOS         # Name of the section
-          script: flutter build ios   # The script(s) to be run in that section
+            - xcodebuild build -workspace "<your_xcode_workspace>.xcworkspace" -scheme "<your_scheme>" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+        artifacts:
+            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
