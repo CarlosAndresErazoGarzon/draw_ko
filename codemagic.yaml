@@ -1,34 +1,7 @@
 workflows:
-  my-workflow:
-    name: My workflow name
-    instance_type: mac_mini
-    max_build_duration: 60
-    environment:
-      groups:
-        - group_name
-      vars:
-        PUBLIC_ENV_VAR: ""
-      flutter: stable
-      xcode: latest
-    cache:
-      cache_paths:
-        - ~/.pub-cache
-    triggering:
-      events:
-        - push
-      branch_patterns:
-        - pattern: '*'
-          include: true
-          source: true
-      cancel_previous_builds: false
+  hello-world:
+    name: Hello world workflow
     scripts:
-      - name: Build for iOS         # Name of the section
-      script: flutter build ios   # The script(s) to be run in that section
-    artifacts:
-      - build/**/outputs/bundle/**/*.aab
-    publishing:
-      email:
-        recipients:
-          - anes_carlos@hotmail.com
-      scripts:
-        - echo 'Post-publish script'
+        scripts:
+        - name: Build for iOS         # Name of the section
+          script: flutter build ios   # The script(s) to be run in that section
