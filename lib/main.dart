@@ -36,11 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     ["회사원", "Oficinista"], ["요리사", "Cocinero"], ["기자", "Reportero"],
                     ["가수", "Cantante"], ["군인", "Soldado"]];
 
-  var activity = [["자다","Dormir"], ["공부하다", "Estudiar"], ["일하다", "Trabajar"],
-                  ["운동하다", "Ejercitarse"], ["숙제를 하다", "Hacer tarea"], ["옷을 사다", "comprar ropa"],
-                  ["영화를 보다", "Ver una película"], ["친구를 만나다", "Encontrarse con un amigo"],
-                  ["태권도를 배우다", "Aprender taekwondo"], ["밥을 먹다", "Comer"],
-                  ["커피를 마시다", "Beber café"], ["책을 읽다", "Leer un libro"]];
+  var activity = [["자요","Durmiendo"], ["공부해요", "Estudiando"], ["일해요", "Trabajando"],
+                  ["운동해요", "Ejercitandose"], ["숙제를 해요", "Haciendo tarea"], ["옷을 사요", "Comprando ropa"],
+                  ["영화를 봐요", "Viendo una película"], ["친구를 만나요", "Encontrandose con un amigo"],
+                  ["태권도를 배워요", "Aprendiendo taekwondo"], ["밥을 먹어요", "Comiendo"],
+                  ["커피를 마셔요", "Bebiendo café"], ["책을 읽어요", "Leyendo un libro"]];
 
   var place = [["도서관","Biblioteca"], ["집", "Casa"], ["백화점", "Centro comercial"],
                ["시장", "Mercado"], ["공원", "Parque"], ["커피숍", "Cafetería"],
